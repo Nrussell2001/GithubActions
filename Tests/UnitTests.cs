@@ -125,7 +125,7 @@ public class Power
     }
 
     [TestMethod]
-    public void Multiply_Invalid_Patino()
+    public void Power_Invalid_Patino()
     {
         Assert.ThrowsException<FormatException>(() => Program.Power("1", "a"));
         Assert.ThrowsException<FormatException>(() => Program.Power("a", "1"));
@@ -133,7 +133,7 @@ public class Power
     }
 
     [TestMethod]
-    public void Multiply_Null_Patino()
+    public void Power_Null_Patino()
     {
         Assert.ThrowsException<ArgumentNullException>(() => Program.Power("1", null));
         Assert.ThrowsException<ArgumentNullException>(() => Program.Power(null, "1"));
